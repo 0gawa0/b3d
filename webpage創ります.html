@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="nakagawa">
+    <link rel="stylesheet" href="sentan.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poiret+One&family=Zen+Maru+Gothic:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kiwi+Maru:wght@300&family=Poiret+One&family=Zen+Maru+Gothic:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <title>test</title>
+</head>
+
+<body>
+    <div class="box">
+        <img class="title_image" src="./image/laptop.jpg">
+        <h1 class="title_text">blenderのあれこれ</h1>
+    </div>
+    <!--押しポイントを創る-->
+
+    <div class="titlebox">
+        <h2>このサイトについて</h2>
+    </div>
+
+    <div class="content_area">
+        <div class="textbox">
+            <p class="paragraph">
+                三日坊主にならないようにするための自己満サイトです</br>
+                なお、載せている情報が偏っている可能性があります</br>
+                </br>
+                がんばるます
+            </p>
+        </div>
+        <div class="textbox">
+            <img class="blender_logo" src="./image/blender_icon_1024x1024.png">
+        </div>
+    </div>
+
+    <div class="titlebox">
+        <h2>目次</h2>
+    </div>
+
+    <div class="content_area">
+        <div class="in_textbox">
+            <a class="paragraph subtitle" href="./modeling.html"><span>モデリング</span></a>
+            <img class="image" src="./image/cube.png" alt="四角形">
+            <p class="paragraph">
+                形作りに関わる情報</br>
+                ここではポリゴンモデリングを中心に取りあげます
+            </p>
+        </div>
+        <div class="in_textbox">
+            <a class="paragraph subtitle" href="./material.html"><span>マテリアル</span></a>
+            <img class="image" src="./image/material.png" alt="物の質感">
+            <p class="paragraph">
+                オブジェクトの質感</br>
+                作品の質を大きく左右する大事な要素です
+            </p>
+        </div>
+        <div class="in_textbox">
+            <a class="paragraph subtitle" href="./composite.html"><span>コンポジット</span></a>
+            <img class="image" src="./image/composite.png" alt="最後の仕上げ">
+            <p class="paragraph">
+                全体の空気感、仕上げ</br>
+                一枚の画像、映像作品に仕上げたいときに必須の工程です
+            </p>
+        </div>
+    </div>
+
+    <div class="titlebox">
+        <h2>その他参考資料</h2>
+    </div>
+
+    <div class="content_area">
+        <div class="textbox">
+            <div class="border">
+                <ul class="slider">
+                    <li>
+                        <p class="paragraph">
+                            ジオメトリーノードの使い方
+                        </p>
+                        <div class="moviebox">
+                            <a href="https://docs.blender.org/manual/ja/dev/render/shader_nodes/input/geometry.html">
+                                <img class="slide_image" src="./image/geometory_node.jpg" alt="geometorynode">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="paragraph">
+                            Eeveeの設定について
+                        </p>
+                        <div class="moviebox">
+                            <a href="https://dskjal.com/blender/how-to-use-eevee.html">
+                                <img src="./image/EEVEE.png" alt="EEVEE">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="paragraph">
+                            UV展開
+                        </p>
+                        <div class="moviebox">
+                            <a href="https://dskjal.com/blender/unwrap-tips.html">
+                                <img class="slide_image" src="./image/UV.jpg" alt="UV">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="paragraph">
+                            Blenderの作品集
+                        </p>
+                        <div class="moviebox">
+                            <a href="https://www.youtube.com/c/mrdodobird/videos">
+                                <img  class="slide_image" src="./image/work.png" alt="work">
+                            </a>
+                        </div>
+                    </li>
+                    <!--/slider-->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">©2022 nakagawa keigo.</footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--自作のJS-->
+    <script src="./js/6-1-7.js"></script>
+</body>
+
+</html>

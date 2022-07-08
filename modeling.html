@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="nakagawa">
+    <link rel="stylesheet" href="sentan.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poiret+One&family=Zen+Maru+Gothic:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kiwi+Maru:wght@300&family=Poiret+One&family=Zen+Maru+Gothic:wght@300&display=swap"
+        rel="stylesheet">
+    <title>test</title>
+</head>
+
+<body>
+    <div class="box">
+        <img class="title_image" src="./image/laptop.jpg">
+        <h1 class="title_text">blenderのあれこれ</h1>
+    </div>
+    <div class="titlebox">
+        <h2>モデリングについて</h2>
+    </div>
+
+    <div class="content_area">
+        <div class="textbox">
+            <h3>そもそもポリゴンってなに？</h3>
+            <p class="paragraph">
+                「ポリゴン（Polygon）」とは、直訳すると「多角形」という意味を持ちます。
+                映像やゲーム用の3DCGモデルの制作においては、3点以上の頂点を結んでできた多角形データのことを指し、曲面を構成する最小単位です。
+                このようなポリゴンの集まりによって立体的な曲面を表現されています。<br>
+            </p>
+            <img class="example_image" src="./image/polygon.png" alt="ポリゴン">
+            <p class="image_description">頂点（Vercel）、辺（Edge）、面（Surface）からなる</p>
+            <br>
+            <h3>ローポリゴン（ローポリ）</h3>
+            <p class="paragraph">
+                単語の通りポリゴン数が少ないモデルのことを指します。一番の特徴は処理が軽いことです。<br>
+                遠くに見える人物を描画するときやゲーム用のCGなどに使われることが多く、
+                データの処理時間を短くするために使用されます。
+            </p>
+            <h3>ハイポリゴン（ハイポリ）</h3>
+            <p class="paragraph">
+                ローポリゴンとは異なり、ポリゴン数が多いのがハイポリゴンです。ポリゴン数が多いことで精細で滑らかな描画が可能となります。
+                細かい表現ができますが、その分処理に時間がかかるのが特徴です。
+            </p>
+            <div class="side">
+                <img class="example_image" src="./image/lowpoly.png" alt="ローポリ">
+                <img class="example_image" src="./image/highpoly.png" alt="ローポリ">
+            </div>
+            <p class="image_description">左がローポリモデル、右がハイポリモデル　ハイポリの情報量がすごい</p>
+            <br>
+        </div>
+    </div>
+
+    <div class="content_area">
+        <div class="textbox">
+            <h3>オブジェクトモードと編集モード</h3>
+            <p class="paragraph">
+                3Dで何かを作る工程には、様々な作業が必要となります。
+                それらの作業中に、余計な操作をしてしまわないようにするため、
+                blenderでは”モード”を使って行える作業を制限しています。
+                これにはオブジェクトモードと編集モードがあります。
+            </p>
+            <h3>オブジェクトモード</h3>
+            <p class="paragraph">
+                「オブジェクトモード 」は、 オブジェクトの配置したり選択をするモードです。
+                オブジェクト とは、モデリングして作ったキャラだったり、カメラだったり、光源などのことです。
+            </p>
+            <h3>編集モード</h3>
+            <p class="paragraph">
+                「編集モード 」は、選択されたオブジェクトのポリゴンの編集を行うモードです。
+                メッシュオブジェクトの 頂点を移動させたり、新しいポリゴンを作ったりします。
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer">©2022 nakagawa keigo.</footer>
+</body>
+
+</html>

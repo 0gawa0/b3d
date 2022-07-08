@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ebe5e5;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Indie Flower', 'Kiwi Maru', cursive;
+    ;
+    color: #635d5d;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: 'Indie Flower', 'Kiwi Maru', cursive;
+    ;
+    color: #635d5d;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #363535;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.rightSpace {
+    width: 300px;
+}
+
+.box {
+    position: relative;
+}
+
+.title_image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.title_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 400%;
+    font-family: 'Indie Flower', 'Kiwi Maru', cursive;
+    color: #ebe5e5;
+}
+
+.titlebox {
+    border-radius: 30px;
+    background-color: #ebe5e5;
+    box-shadow: 13px 13px 26px #cac5c5,
+        -13px -13px 26px #ffffff;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 800px;
+}
+
+.textbox {
+    border-radius: 50px;
+    background-color: #ebe5e5;
+    box-shadow: 13px 13px 26px #cac5c5,
+        -13px -13px 26px #ffffff;
+    padding: 20px;
+    margin: 25px;
+}
+
+.textbox img {
+    display: block;
+    margin: auto;
+}
+
+.in_textbox {
+    border-radius: 50px;
+    width: 500px;
+    /*background: linear-gradient(145deg, #d4cece, #fbf5f5);
+    box-shadow: 13px 13px 26px #cac5c5,
+                -13px -13px 26px #ffffff;*/
+    background: #ebe5e5;
+    box-shadow: inset 10px 10px 17px #cac5c5,
+        inset -10px -10px 17px #ffffff;
+    padding: 20px;
+    margin: 25px;
+}
+
+.in_textbox img {
+    display: block;
+    margin: auto;
+}
+
+.content_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 100px 100px 100px;
+}
+
+.paragraph {
+    margin: 10px;
+    font-size: 25px;
+    font-family: 'Indie Flower', 'Kiwi Maru', cursive;
+    color: #635d5d;
+}
+
+.image_description {
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Indie Flower', 'Kiwi Maru', cursive;
+    color: #635d5d;
+}
+
+.side {
+    display: flex;
+}
+
+.subtitle {
+    font-size: 40px;
+}
+
+.blender_logo {
+    width: 200px;
+    height: 200px;
+}
+
+.image {
+    border-radius: 10px;
+    width: 50%;
+    height: 125px;
+    object-fit: cover;
+    margin: 5px;
+}
+
+.example_image {
+    width: 30%;
+    height: 30%;
+    margin: 5px;
+}
+
+.footer {
+    background-color: #363535;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+
+.moviebox {
+    margin: 20px;
+    width: 400px;
+    height: 250px;
+    background-color: #363535;
+    overflow: hidden;
+}
+
+.moviebox img {
+    display: block;
+    margin: auto;
+    transform: 0.7s all;
+}
+
+.moviebox img:hover {
+    opacity: 0.4;
+    transform:scale(1.2,1.2);
+    transition:0.7s all;
+}
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+    /*横幅94%で左右に余白を持たせて中央寄せ*/
+    width: 94%;
+    margin: 0 auto;
+}
+
+.slider img {
+    width: 60vw;
+    /*スライダー内の画像を60vwにしてレスポンシブ化*/
+    height: auto;
+}
+
+.slider .slick-slide {
+    transform: scale(0.8);
+    /*左右の画像のサイズを80%に*/
+    transition: all .5s;
+    /*拡大や透過のアニメーションを0.5秒で行う*/
+    opacity: 0.5;
+    /*透過50%*/
+}
+
+.slider .slick-slide.slick-center {
+    transform: scale(1);
+    /*中央の画像のサイズだけ等倍に*/
+    opacity: 1;
+    /*透過なし*/
+}
+
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+    position: absolute;
+    /*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;
+    /*マウスカーソルを指マークに*/
+    outline: none;
+    /*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;
+    /*矢印の色*/
+    border-right: 2px solid #666;
+    /*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {
+    /*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {
+    /*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width: 8px;
+    /*ドットボタンのサイズ*/
+    height: 8px;
+    /*ドットボタンのサイズ*/
+    display: block;
+    border-radius: 50%;
+    background: #ccc;
+    /*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button {
+    background: #333;
+    /*ドットボタンの現在地表示の色*/
+}
